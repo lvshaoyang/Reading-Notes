@@ -87,3 +87,6 @@ Chapter 2
     4、我的jdk里没有SocketInputStream这个类竟然？？
         答：我去，SocketInputStream竟然是自己定义的。不是jdk里的
         tomcat4之前的版本，org.apache.catalina.connector.http.SocketInputStream是有的。这个类可以在%tocmat%/lib/catalina.jar中找到，把这个jar导入进来即可。tomcat6以后，org.apache.catalina.connector.http.SocketInputStream就被移除了。%tocmat%/lib/catalina.jar中就找不到这个类了，你导入进来这个包当然“怎么也导不进去”SocketInputStream
+2017-07-15
+    
+    问题：关于tomcat是怎么使用jvm的呢？有一个启动类，Bootstrap.java,这个方法中有一个main()方法，通过这个main()方法来启动tomcat。跟j2se的说法一样，就是一个项目只有一个入口那就是main()方法。
