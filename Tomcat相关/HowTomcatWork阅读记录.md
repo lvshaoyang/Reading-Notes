@@ -90,3 +90,9 @@ Chapter 2
 2017-07-15
     
     问题：关于tomcat是怎么使用jvm的呢？有一个启动类，Bootstrap.java,这个方法中有一个main()方法，通过这个main()方法来启动tomcat。跟j2se的说法一样，就是一个项目只有一个入口那就是main()方法。
+2017-07-16（第三章49页）
+    
+    问：关于HttpRequest和HttpResponse是什么呢?这个问题引起我对java中对象的理解。其实现在还是不太了解或者说不是很清晰的描述java对象是什么呢？
+    答：HttpRequest就是一个封装了HTTP请求的并且解析HTTP相关的信息，封装到HttpRequest对象的属性里。解析的话，还是解析字符串，使用的String相关的方法。HttpRequest是使用的相关流来获取字符串，这个流是用Socket对象获取的。
+    HttpResponse因为要向页面返回内容，因此要有一个输出流，而这个输出流也是Socket对象获取的。嗯，这又涉及到网络编程了，Socket是怎么知道有一个流并且获取呢。
+    问：书里为HttpRequest和HttpResponse都包了一层外观类，HttpRequestFacade和HttpResponseFacade还是不理解有什么用，虽然书中给了解释。
