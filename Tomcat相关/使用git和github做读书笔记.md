@@ -27,5 +27,7 @@
         git commit -m "解释此次都提交了什么，像一个说明"
         推送本地库到远程库：
         git push git@github.com:lvshaoyang/Reading-Notes.git
+备注：
+	如果我在一台电脑上更新了，我另一台电脑怎么弄呢，
         
     
