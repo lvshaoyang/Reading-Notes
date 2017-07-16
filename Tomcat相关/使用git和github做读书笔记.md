@@ -28,6 +28,11 @@
         推送本地库到远程库：
         git push git@github.com:lvshaoyang/Reading-Notes.git
 备注：
-	如果我在一台电脑上更新了，我另一台电脑怎么弄呢，
+	
+	如果我在一台电脑上更新了，我另一台电脑怎么弄呢？
+	那就需要先在本地Pull命令，跟服务器同步下。
+	git pull git@github.com:lvshaoyang/Reading-Notes.git
+	注：pull（拉，拔，拖）从服务器上拉下来。
+	   push(推，增加，推动)
         
     
