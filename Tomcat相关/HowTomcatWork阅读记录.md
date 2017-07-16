@@ -96,3 +96,13 @@ Chapter 2
     答：HttpRequest就是一个封装了HTTP请求的并且解析HTTP相关的信息，封装到HttpRequest对象的属性里。解析的话，还是解析字符串，使用的String相关的方法。HttpRequest是使用的相关流来获取字符串，这个流是用Socket对象获取的。
     HttpResponse因为要向页面返回内容，因此要有一个输出流，而这个输出流也是Socket对象获取的。嗯，这又涉及到网络编程了，Socket是怎么知道有一个流并且获取呢。
     问：书里为HttpRequest和HttpResponse都包了一层外观类，HttpRequestFacade和HttpResponseFacade还是不理解有什么用，虽然书中给了解释。
+    说明：在servlet/JSP编程中，参数名jsessionid用于携带一个会话标识符。这是为什么有时候在地址栏中会看到一个jseesionid。但是具体用法什么的还不清楚。这个会话标识是谁生成的？还要解析一下设置到HttpRequest中。
+    问：在HttpHead中，怎么知道请求头的头和尾，参数和值呢，？没有源码。
+    答：null
+    问：关于Cookie？Cookie是怎么产生的，谁产生的呢？
+    答：Cookie是由浏览器作为HTTP请求头的一部分发送的。但是Cookie是什么时候在哪产生的？
+    问：如果用户使用GET方法请求servlet，则所有的参数都会在查询字符串中，那么如果用户使用POST方法请求servlet，那么参数在哪里?怎么解析？
+    答：所有的名/值都会存储在一个HashMap对象中。那么，如果用表单POST提交的话，是怎么提交的呢，不像GET那么直观，直接在地址栏中就可以看到。参数可以存在于查询字符串或HTTP请求体中。HTTP请求体是什么玩意？？如果用户使用POST方法提交请求时，请求体会包含参数，则请求头“content-length”的值会大于0，content-type的值为"application/x-www-form-urlencoded"
+    问：如果不用IDE工具，但是建立的项目引入了jar包，自己的项目就只引入了一个jar包，那么在windows下只输入java来运行的话，肯定会不能找到某个Class，可以在java命令执行时，引入jar，比如这样：
+    java -classpath ./lib/servlet.jar;./ex03.pyrmont.startup.Bootstrap
+    
