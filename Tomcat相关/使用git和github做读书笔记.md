@@ -34,5 +34,13 @@
 	git pull git@github.com:lvshaoyang/Reading-Notes.git
 	注：pull（拉，拔，拖）从服务器上拉下来。
 	   push(推，增加，推动)
+注：
+	
+	在公司电脑上安装git客户端，同步新增的repository，Reading-Notes库，步骤：
+		1、在E盘建立新文件夹，Reading-Notes,然后右键git bash here,在此文件夹下生成一个.git的隐藏文件。
+		2、然后需要再生成一个ssh key,输入命令：git-keygen -t rsa -C "984800179@qq.com",注意，生成的文件id_rsa.pub在/c/Users/adm/.ssh/  这个文件夹下，打开id_rsa.pub,将其中生成的ssh-rsa添加到github中。在github中选择仓库，点击settings下面的Deploy key,add key,输入title和key即可。
+		3、使用命令关联本地库和远程库：git remote add origin git@github.com:lvshaoyang/Reading-Notes.git
+		4、将远程库的文件弄到本地库：git pull git@github.com:lvshaoyang/Reading-Notes.git
+		5、关于使用git config的配置命令，可以尝试着不执行，然后看如果不配置的话，是否可以检下来项目！！！！
         
     
