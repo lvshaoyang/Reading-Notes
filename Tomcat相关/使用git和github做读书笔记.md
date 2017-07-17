@@ -13,7 +13,7 @@
     1、先创建一个文件夹，创建空目录即可。进入到当前新建文件的路径下（确保路径不要含有中文）。
     2、通过git init命令可以把这个目录变成Git可以管理的仓库。然后可以看到一个.git文件。
     配置Git：
-        输入ssh -keygen -t rsa -C "984800179@qq.com"直接配置就行。不用输入其它东西。默认就行，生成的一个id_rsa.pub中有一个SSH密码，将这个key设置到github网站上去，不然不让你提交。
+        输入ssh-keygen -t rsa -C "984800179@qq.com"直接配置就行。不用输入其它东西。默认就行，生成的一个id_rsa.pub中有一个SSH密码，将这个key设置到github网站上去，不然不让你提交。
     配置用户名和邮箱：
         git config —-global user.name "lvshaoyang"
         git config —global user.email "984800179@qq.com"
