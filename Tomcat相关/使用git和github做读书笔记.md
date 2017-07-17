@@ -42,5 +42,8 @@
 		3、使用命令关联本地库和远程库：git remote add origin git@github.com:lvshaoyang/Reading-Notes.git
 		4、将远程库的文件弄到本地库：git pull git@github.com:lvshaoyang/Reading-Notes.git
 		5、关于使用git config的配置命令，可以尝试着不执行，然后看如果不配置的话，是否可以检下来项目！！！！
+	注意1：这个ssh key生成的，只是read-only,不能提交，这个是什么原因呢？
+		原因是在添加key的时候，有一个选项，Allow write access,这个我没有打勾，因此不允许我这个key写入仓库，重新添加一下，选择打勾就可以。
+	注意2：使用ssh命令生成key时，可以输入路径，注意一点就可以了。
         
     
