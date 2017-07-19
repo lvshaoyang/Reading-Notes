@@ -105,4 +105,15 @@ Chapter 2
     答：所有的名/值都会存储在一个HashMap对象中。那么，如果用表单POST提交的话，是怎么提交的呢，不像GET那么直观，直接在地址栏中就可以看到。参数可以存在于查询字符串或HTTP请求体中。HTTP请求体是什么玩意？？如果用户使用POST方法提交请求时，请求体会包含参数，则请求头“content-length”的值会大于0，content-type的值为"application/x-www-form-urlencoded"
     问：如果不用IDE工具，但是建立的项目引入了jar包，自己的项目就只引入了一个jar包，那么在windows下只输入java来运行的话，肯定会不能找到某个Class，可以在java命令执行时，引入jar，比如这样：
     java -classpath ./lib/servlet.jar;./ex03.pyrmont.startup.Bootstrap
+2017-07-18
+
+Chapter 4
+    tomcat的默认连接器
+    
+    1、tomcat中使用的连接器的功能：
+    实现org.apache.catalina.Connector接口
+    负责创建实现了org.apache.catalina.Request接口的request对象；
+    负责创建实现了org.apache.catalina.Reponse接口的response对象；
+    
+    
     
