@@ -114,3 +114,17 @@ Chapter 3
     使用输出流输出到out上
     OutputStream out = new BufferedOutputStream(new FileOutputStream(output));
     最终输出到的是文件 ，最开始读取的也是文件 。
+2017-07-23
+Chapter 4
+
+Internet地址
+
+    连接到Internet的设备称为节点(node)。计算机节点称为主机(host)。每个节点或主机都由至少一个唯一的数来标识，如果有两个网卡就两个ip，这称为Internet地址或IP地址。
+    问题：局域网中的电脑在internet上是种怎样的存在呢？？这些通过路由或者交换机连接外网的电脑？？
+
+    IPv4和IPv6是一种协议。4和6指Internet协议的版本。
+    一个DNS名会映射到多个IP地址，这时就要DNS服务器负责随机选择一台机器来响应各个请求。这在流量非常大的Web网站经常使用，它将负载分摊到多个系统上。例如，www.oreilly.com实际上是两台机器，一台位于208.201.239.100，一台位于208.201.239.101上。
+    域名解析是需要一个域名服务器来解析的。那么域名服务器上是在哪放着呢？在自己电脑上有一个？
+    问题来了，windows中经常见到的域是什么勒？？
+
+    
