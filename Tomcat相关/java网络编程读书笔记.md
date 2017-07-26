@@ -151,8 +151,44 @@ URL和URI
 2017-07-26
 
 chapter 6
+
+HTTP
+
 此章深入后台，展示在浏览器地址栏输入网址后并按Enter时到底发生了什么?这不是正是我想要的吗？
     
     HTTP协议：
     HTTP是Web浏览器和Web服务器之间通信的标准协议。HTTP指定客户端与服务器如何建立连接、客户端如何从服务器请求数据，服务器如何响应请求，以及最后如何关闭连接。
     HTTP连接使用TCP/IP来传输数据。
+    客户端请求定义了8个顶级类型：
+    text 表示人可读的文字，
+    image 表示图片
+    application 表示二进制数据
+    multipart 表示多个文档和资源的容器
+    什么是Cookie？
+    很多网站使用一些小文本串在连接之间存储持久的客户端状态，这些小文本串称为cookie。也就是说cookie存储在网站服务器上？？
+
+chapter 7
+
+URLConnection
+
+    URLConnection类是一个抽象类。通常通过反射来进行实例化。而且对ftp等协议 不支持。
+    直接使用URLConnection类的程序遵循以下步骤：
+    1、构造一个URL对象
+    2、调用这个URL对象的openConnection()获取一个对应该URL的URLConnection对象。
+    3、配置这个URLConnection
+    4、读取首部字段
+    5、获得输入流并读取数据
+    6、获得输出流并写入数据
+    7、关闭连接
+
+    第一次调用URLConnection时，它是未连接的。connect()方法会在本地和远程主机之间建立一个连接 。
+    使用URLConnection的对象可以获取一些首部字段。
+    缓存：
+    Web浏览器多年来一直在缓存页面和图片。缓存到哪了呢？
+    还是不明白TCP SOCKET
+    有浏览器和服务器器了要javaweb这些类有什么用？
+
+chapter 8
+客户端Socket
+    
+    在Internet上，数据按有限大小的包传输，这些包称为数据报（datagram）
