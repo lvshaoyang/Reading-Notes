@@ -51,3 +51,13 @@
 	2、Java基础中的Java EE规范中的RMI(Java Remote Method Invocation，Java远程方法调用)、JMS（Java Message Service,Java消息服务）等技术.
 	3、机器指令:可以被计算机CPU直接进行识别并执行,其表现形式为二进制.机器指令通常由操作码和操作数两部分组成,操作码负责指令需要完成的操作,操作数负责数据运算,以及运算结果所存放的位置等.
 	4、Java技术的核心就是Java虚拟机，因为所有Java程序都运行在Java虚拟机内部。
+
+2017/8/1 11:54:52 
+	
+## JVM之类装载器 ##
+	
+	参考网址：
+	http://qinbin.blog.51cto.com/11773640/1951312
+	
+	
+![](http://i.imgur.com/mqCZnRe.png)
