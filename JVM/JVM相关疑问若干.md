@@ -56,8 +56,9 @@
 	
 ## JVM之类装载器 ##
 	
-	参考网址：
+	重要的参考网址：
 	http://qinbin.blog.51cto.com/11773640/1951312
+	此网址是一个博客，里面详细的介绍了JVM。
 	
 	
 ![](http://i.imgur.com/mqCZnRe.png)
