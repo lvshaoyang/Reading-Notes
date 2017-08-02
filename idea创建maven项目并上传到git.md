@@ -57,3 +57,22 @@
 	
 	到此你就可以使用Intellij IDEA的Git插件将本地与远程仓库中的代码进行pull/push的操作了。
 	
+
+###### 备注：一直找不到Git在mac上的安装位置，可以在命令行中输入：
+######     which git，就会显示git的安装位置了。但是mysql不行。
+
+### idea从电脑上自身检出github上的项目
+    
+    因为已经配置过了git，参考步骤1.在idea上配置github，即配置上自己的注册的帐户。如下图：
+
+![](/Users/lvshaoyang/Downloads/A6F5B6E9-1E8F-4BDF-BF9B-13D37279B810.png)
+    
+    然后就是VCS-Checkout from Version Control -Github,然后点击clone即可获取。
+    记住一定符合maven项目的结构目录：
+###### 问题：idea在文件 夹下不能新建Class文件？
+###### 要将目录右键：Make Directory as SourceRoot才可以新建。class和interface
+    
+问题：
+    在idea这个IDE中，maven web项目的文件组织结构是什么呢？？
+    
+	
