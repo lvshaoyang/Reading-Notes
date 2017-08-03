@@ -1,6 +1,6 @@
 ## 使用IDEA创建maven项目并保存到git上 ##
 
-#### 创建maven web项目 ####
+#### 一部分、创建maven web项目 ####
 	
 	Idea版本为2017.2
 	一、file--new--project--maven---勾选create from archetype选中webapp
@@ -25,7 +25,7 @@
 	
 	其他到没有什么了！！。
 
-#### 配置Intellij idea中的Git/ GitHub ####
+####二部分、 配置Intellij idea中的Git/ GitHub ####
 
 	1、打开Settings-- Version Control--Git。下拉选择Github，填写Host、Login和Password，然后Test是否成功。版本为2.13
 	如图：
@@ -64,8 +64,8 @@
 ### idea从电脑上自身检出github上的项目
     
     因为已经配置过了git，参考步骤1.在idea上配置github，即配置上自己的注册的帐户。如下图：
+![](http://i.imgur.com/7Tf107q.png)
 
-![](/Users/lvshaoyang/Downloads/A6F5B6E9-1E8F-4BDF-BF9B-13D37279B810.png)
     
     然后就是VCS-Checkout from Version Control -Github,然后点击clone即可获取。
     记住一定符合maven项目的结构目录：
@@ -74,5 +74,14 @@
     
 问题：
     在idea这个IDE中，maven web项目的文件组织结构是什么呢？？
+
+## 2017/8/3 9:24:32  ##
+
+	
+	
+	遇到了新问题：
+	
+	昨天使用第二部分的配置步骤在电脑上新建了idea中的maven web项目，并且上传到了github,在家里的电脑上使用github检索下来，并且使用idea对项目进行了编辑，添加了类等。但是今天在idea中使用git--repository--pull时，却一直提示pull failed,然后根据晚上的提示，把报错的两个.iml文件删除了，然后项目又没有了。配置了github又重新从github上检了一遍。
+	
     
 	
