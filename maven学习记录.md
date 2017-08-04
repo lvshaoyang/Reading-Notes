@@ -167,3 +167,13 @@ Eclispe安装m2eclipse插件用来集成Maven
 		The folder is already a source folder
 		解决办法：右键build path -> configure build path -> source ，选择 src/main/java、src/test/java删除，然后再新建。在buildpath中看到了这两个目录状态为missing.
 		然后在pom.xml中添加依赖，然后maven--update project，然后相应的依赖的jar包就搞到中央仓库了。
+
+2017/8/4 9:27:29 
+
+#关于maven web项目的目录组织结构#
+参考下图：
+
+![](http://i.imgur.com/jIkh5wR.jpg)
+
+	
+	
