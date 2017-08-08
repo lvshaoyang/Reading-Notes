@@ -198,3 +198,27 @@ chapter 8
     Scoket是很牛逼的存在。Socket一般会先完成某种协商握手，然后再具体传输数据。
     问题：Socket到底是什么、？
     是对网络的连接的封装，那么这跟数据库连接池有什么想像的地方？
+
+2017-08-08
+    
+    第九章
+    可以实现一些功能简单的web服务器。或者一些专门的应用服务器。IIS也是服务器，可以接收http请求。
+    适合计算机实现的大多数加密机制都是基于密钥思想的，密钥是一种更加般化的口令，并不限于文本。
+    1、在传统的秘密密钥（对称密钥）加密中，加密和解密数据都使用相同的密钥。发送方和接收方知道这个密钥。并且在双方发送消息时，首先要发送未加密的密钥，如果被人监听，那么别人也会得到这个密钥，消息加密也毫无意义了。
+    2、在公开密钥（非对称密钥）加密中，加密和解密数据使用不同的密钥。一个密钥为公开密钥（public key）,用于加密数据。这个密钥可以提供给任何人。另一个密钥为私有密钥（private key），用于解密数据。那怎么解密的呢？？
+    另外可以对消息进行再次加密，一次使用她的私有密钥，一次使用公开密钥。
+    但是还有一种称为“中间人”攻击的模式。
+    在Java中使用强加密，JSSE（java安全socket扩展）有四个包，
+    javax.net.ssl定义Java安全网络通信API
+    javax.net
+    java.security.cert
+    com.sun.net.ssl
+    
+    创建安全客户端Socket
+    使用加密SSL Socket与现有的安全服务器通信确实非常简单。并不是用java.net.Socket对象，而是从javax.net.ssl.SSLSocketFactory使用其createSocket（）方法得到一个Socket对象。
+    实例：
+    SocketFactory factory = SSLSocketFactory.getDefault();
+    Socket socket = factory.createSocket("网址",port);
+    
+    所有的这些Socket实际上都是javax.net.ssl.SSLSocket，这是java.net.Socket的一个子类。
+    
